@@ -5,7 +5,7 @@
         <img alt="logo" class="logo" src="@/assets/img/logo.png" />
         <span class="title">{{systemName}}</span>
       </div>
-      <div class="desc">Ant Design 是西湖区最具影响力的 Web 设计规范</div>
+      <!--div class="desc">Ant Design 是西湖区最具影响力的 Web 设计规范</div-->
     </div>
     <div class="login">
       <a-form @submit="onSubmit" :autoFormCreate="(form) => this.form = form">
