@@ -8,8 +8,8 @@ module.exports = {
   fixedSideBar: true,
   weekMode: false,
   multiPage: false,
-  systemName: 'Vue Antd Admin',
-  copyright: '2018 ICZER 工作室出品',
+  systemName: 'VIP800人防卫星高清编解码器',
+  copyright: '2020 南京北境智能科技有限公司',
   animate: {
     name: 'bounce',
     direction: 'left'

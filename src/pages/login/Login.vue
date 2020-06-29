@@ -29,7 +29,7 @@
               </a-input>
             </a-form-item>
           </a-tab-pane>
-          <a-tab-pane tab="手机号登录" key="2">
+          <!--a-tab-pane tab="手机号登录" key="2">
             <a-form-item>
               <a-input size="large" placeholder="mobile number" >
                 <a-icon slot="prefix" type="mobile" />
@@ -47,7 +47,7 @@
                 </a-col>
               </a-row>
             </a-form-item>
-          </a-tab-pane>
+          </a-tab-pane-->
         </a-tabs>
         <div>
           <a-checkbox :checked="true" >自动登录</a-checkbox>
@@ -56,13 +56,13 @@
         <a-form-item>
           <a-button :loading="logging" style="width: 100%;margin-top: 24px" size="large" htmlType="submit" type="primary">登录</a-button>
         </a-form-item>
-        <div>
+        <!--div>
           其他登录方式
           <a-icon class="icon" type="alipay-circle" />
           <a-icon class="icon" type="taobao-circle" />
           <a-icon class="icon" type="weibo-circle" />
           <router-link style="float: right" to="/dashboard/workplace" >注册账户</router-link>
-        </div>
+        </div-->
       </a-form>
     </div>
   </common-layout>
