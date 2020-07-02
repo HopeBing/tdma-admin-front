@@ -1,7 +1,7 @@
 {
-  "name": "vue-antd-admin",
+  "name": "tdma-admin",
   "version": "0.1.0",
-  "homepage": "https://iczer.github.io/vue-antd-admin",
+  "homepage": "",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --port 8098",

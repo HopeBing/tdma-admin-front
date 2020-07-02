@@ -23,11 +23,23 @@ export default new Router({
       children: [
         {
           path: 'dashboard',
-          name: '工作台',
+          name: 'Dashboard',
           meta: {
             icon: 'dashboard'
           },
-          component: () => import('@/pages/dashboard/workplace/WorkPlace')
+          component: BlankView,
+          children: [
+            {
+              path: 'workplace',
+              name: '工作台',
+              component: () => import('@/pages/dashboard/workplace/WorkPlace'),
+            },
+            {
+              path: 'analysis',
+              name: '分析页',
+              component: () => import('@/pages/dashboard/analysis/Analysis'),
+            }
+          ]
         },
         {
           path: 'form',
