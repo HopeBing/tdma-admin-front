@@ -4,12 +4,6 @@
       <side-menu :theme="theme" :menuData="menuData" :collapsed="false" :collapsible="false" @menuSelect="onMenuSelect"/>
     </drawer>
     <side-menu :theme="theme" v-else-if="layout === 'side'" :menuData="menuData" :collapsed="collapsed" :collapsible="true" />
-    <drawer :open-drawer="showSetting" placement="right"  @change="onSettingDrawerChange">
-      <div class="setting" slot="handler">
-        <a-icon :type="showSetting ? 'close' : 'setting'"/>
-      </div>
-      <setting />
-    </drawer>
     <a-layout class="admin-layout-main beauty-scroll">
       <admin-header :style="headerStyle" :menuData="menuData" :collapsed="collapsed" @toggleCollapse="toggleCollapse"/>
       <a-layout-header v-if="fixedHeader"></a-layout-header>
@@ -30,7 +24,6 @@ import AdminHeader from './header/AdminHeader'
 import PageFooter from './footer/PageFooter'
 import Drawer from '../components/tool/Drawer'
 import SideMenu from '../components/menu/SideMenu'
-import Setting from '../components/setting/Setting'
 import {mapState} from 'vuex'
 
 const minHeight = window.innerHeight - 64 - 24 - 122
@@ -39,7 +32,7 @@ let menuData = []
 
 export default {
   name: 'AdminLayout',
-  components: {Setting, SideMenu, Drawer, PageFooter, AdminHeader},
+  components: {SideMenu, Drawer, PageFooter, AdminHeader},
   data () {
     return {
       minHeight: minHeight,
