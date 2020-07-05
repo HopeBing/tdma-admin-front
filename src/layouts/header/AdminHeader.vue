@@ -3,7 +3,7 @@
     <div :class="['admin-header-wide', layout]">
       <router-link v-if="isMobile || layout === 'head'" to="/" :class="['logo', isMobile ? null : 'pc', headerTheme]">
         <img width="32" src="@/assets/img/logo.png" />
-        <h1 v-if="!isMobile">{{systemName}}</h1>
+        <h1 v-if="!isMobile">VIP800A</h1>
       </router-link>
       <a-divider v-if="isMobile" type="vertical" />
       <a-icon v-if="layout === 'side'" class="trigger" :type="collapsed ? 'menu-unfold' : 'menu-fold'" @click="toggleCollapse"/>
