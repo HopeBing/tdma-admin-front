@@ -2,7 +2,7 @@
   <a-dropdown>
     <div class="header-avatar" style="cursor: pointer">
       <a-avatar class="avatar" size="small" shape="circle" :src="user.avatar"/>
-      <span class="name">{{user.name}}</span>
+      <span class="name">admin</span>
     </div>
     <a-menu :class="['avatar-menu']" slot="overlay">
       <a-menu-item>
@@ -11,7 +11,7 @@
       </a-menu-item>
       <a-menu-item>
         <a-icon type="setting" />
-        <span>设置</span>
+        <span>账号设置</span>
       </a-menu-item>
       <a-menu-divider />
       <a-menu-item>

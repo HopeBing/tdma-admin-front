@@ -1,14 +1,4 @@
 <template>
-  <page-layout :avatar="currUser.avatar">
-    <div slot="headerContent">
-      <div class="title">{{$t('timeFix')}}，{{currUser.name}}，{{$t('welcome')}}</div>
-      <div>{{$t('position')}}</div>
-    </div>
-    <template slot="extra">
-      <head-info class="split-right" :title="$t('project')" content="56"/>
-      <head-info class="split-right" :title="$t('ranking')" content="8/24"/>
-      <head-info class="split-right" :title="$t('visit')" content="2,223"/>
-    </template>
     <div>
       <a-row style="margin: 0 -12px">
         <a-col style="padding: 0 12px" :xl="16" :lg="24" :md="24" :sm="24" :xs="24">
@@ -75,18 +65,15 @@
         </a-col>
       </a-row>
     </div>
-  </page-layout>
 </template>
 
 <script>
-import PageLayout from '../../../layouts/PageLayout'
-import HeadInfo from '../../../components/tool/HeadInfo'
 import Radar from '../../../components/chart/Radar'
 import {mapState} from 'vuex'
 
 export default {
   name: 'WorkPlace',
-  components: {Radar, HeadInfo, PageLayout},
+  components: {Radar},
   i18n: require('./i18n'),
   data () {
     return {
